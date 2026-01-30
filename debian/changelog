@@ -1,10 +1,10 @@
-fastrpc (1.0.3-1) UNRELEASED; urgency=medium
+fastrpc (1.0.3-1) unstable; urgency=medium
 
   [ ZHANG Yuntian ]
   * fix: add targeting repo
   * fix: restore build arguments
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 30 Jan 2026 06:46:47 +0000
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 30 Jan 2026 07:23:49 +0000
 
 fastrpc (1.0.0-1) unstable; urgency=medium
 
