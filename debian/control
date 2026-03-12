@@ -19,7 +19,13 @@ Package: fastrpc
 Architecture: any
 Section: admin
 Priority: optional
-Depends: ${misc:Depends},
+Depends: libadsp-default-listener1,
+         libadsprpc1,
+         libcdsp-default-listener1,
+         libcdsprpc1,
+         libsdsp-default-listener1,
+         libsdsprpc1,
+         ${misc:Depends},
          ${shlibs:Depends},
 Description: Facilitates efficient remote procedure calls - main package
  This package provides the fastrpc, Qualcomm's userspace library that

@@ -7,13 +7,6 @@ Before=cdsprpcd.service
 Before=gdsp0rpcd.service
 Before=gdsp1rpcd.service
 Before=sdsprpcd.service
-RequiredBy=adsprpcd_audiopd.service
-RequiredBy=adsprpcd.service
-RequiredBy=cdsp1rpcd.service
-RequiredBy=cdsprpcd.service
-RequiredBy=gdsp0rpcd.service
-RequiredBy=gdsp1rpcd.service
-RequiredBy=sdsprpcd.service
 
 [Service]
 ExecStart=/bin/bash -c 'rm -rf /usr/lib/dsp; \
@@ -22,3 +15,12 @@ MAC=$(cat /sys/firmware/devicetree/base/model); \
 if [ "$MAC" = "Radxa Dragon Q6A" ]; then \
     ln -sf /usr/share/qcom/qcs6490/radxa/dragon-q6a/dsp /usr/lib/dsp; \
 fi'
+
+[Install]
+RequiredBy=adsprpcd_audiopd.service
+RequiredBy=adsprpcd.service
+RequiredBy=cdsp1rpcd.service
+RequiredBy=cdsprpcd.service
+RequiredBy=gdsp0rpcd.service
+RequiredBy=gdsp1rpcd.service
+RequiredBy=sdsprpcd.service
