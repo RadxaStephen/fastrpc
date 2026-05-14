@@ -1,3 +1,24 @@
+fastrpc (1.0.5-1) UNRELEASED; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: install systemd services
+  * fix: update runtime dependencies
+  * fix: solve merge conflict
+  * chore: update to 1.0.5
+
+  [ Stephen Chen ]
+  * feat: Add dragon-q8b dsp link
+
+  [ Chongbiao Chen ]
+  * chore: update deps for arm64
+  * feat: update soc_id and service
+  * feat: set soc_id for Q8B
+
+  [ Jiali Chen ]
+  * feat: Add radxa-cm-q64-rpi-cm5-io dsp link
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 14 May 2026 08:00:09 +0000
+
 fastrpc (1.0.4-1) unstable; urgency=medium
 
   [ ZHANG Yuntian ]
